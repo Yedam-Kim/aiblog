@@ -1,0 +1,17 @@
+{
+  "hash": "7d14f4f65459583ece233d100dd873e4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"세종대학교 소개\"\nauthor: \"김예담\"\ndate: \"2024-05-25\"\ncategories: [\"대학교\", \"서울\"]\n---\n\n\n대학교를 소개합니다.\n\n![](thumbnail.jpg)\n\n## 쿼토\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n![\\[세종대학교 전경\\]](sejong2.jpg){fig-align=\"center\" width=\"400\"}\n\n### 실행방법\n\nWhen you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n\n\n:::\n\n```{.r .cell-code}\nlibrary(gapminder)\n\ngapminder_g <- gapminder %>% \n  filter(year == max(year)) %>% \n  ggplot(aes( x = gdpPercap, y = lifeExp, color = continent,\n              size = pop)) +\n    geom_point() +\n    labs(title = \"가장 최근 1인당 국민소득과 기대수명 관계\",\n         x     = \"1인당 국민소득\",\n         y     = \"기대수명\") +\n    theme_minimal() +\n    facet_wrap(~continent) +\n    theme(legend.position = \"none\") +\n    scale_x_continuous(labels = scales::comma)\n\ngapminder_g\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\nYou can add options to executable code like this\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\nThe `echo: false` option disables the printing of code (only output is displayed).\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -8,17 +8,18 @@ categories: ["대학교", "서울"]
 대학교를 소개합니다.
 
 ![](thumbnail.jpg)
-\n쿼토
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.
+## 쿼토
 
-[세종대학교 전경]
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
-실행방법
+![\[세종대학교 전경\]](sejong2.jpg){fig-align="center" width="400"}
 
-When you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+### 실행방법
 
-{r}
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
 library(tidyverse)
 library(gapminder)
 
@@ -37,11 +38,13 @@ gapminder_g <- gapminder %>%
 
 gapminder_g
 
+```
 
 You can add options to executable code like this
 
-{r}
+```{r}
 #| echo: false
 2 * 2
+```
 
-The echo: false option disables the printing of code (only output is displayed).
+The `echo: false` option disables the printing of code (only output is displayed).

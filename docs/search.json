@@ -32,6 +32,13 @@
     "href": "posts/last/index.html",
     "title": "세종대학교 소개",
     "section": "",
-    "text": "대학교를 소개합니다.\n \nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n[세종대학교 전경]\n실행방법\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n{r} library(tidyverse) library(gapminder)\ngapminder_g &lt;- gapminder %&gt;% filter(year == max(year)) %&gt;% ggplot(aes( x = gdpPercap, y = lifeExp, color = continent, size = pop)) + geom_point() + labs(title = “가장 최근 1인당 국민소득과 기대수명 관계”, x = “1인당 국민소득”, y = “기대수명”) + theme_minimal() + facet_wrap(~continent) + theme(legend.position = “none”) + scale_x_continuous(labels = scales::comma)\ngapminder_g\nYou can add options to executable code like this\n{r} #| echo: false 2 * 2\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "대학교를 소개합니다."
+  },
+  {
+    "objectID": "posts/last/index.html#쿼토",
+    "href": "posts/last/index.html#쿼토",
+    "title": "세종대학교 소개",
+    "section": "쿼토",
+    "text": "쿼토\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n\n\n\n[세종대학교 전경]\n\n\n\n실행방법\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(gapminder)\n\ngapminder_g &lt;- gapminder %&gt;% \n  filter(year == max(year)) %&gt;% \n  ggplot(aes( x = gdpPercap, y = lifeExp, color = continent,\n              size = pop)) +\n    geom_point() +\n    labs(title = \"가장 최근 1인당 국민소득과 기대수명 관계\",\n         x     = \"1인당 국민소득\",\n         y     = \"기대수명\") +\n    theme_minimal() +\n    facet_wrap(~continent) +\n    theme(legend.position = \"none\") +\n    scale_x_continuous(labels = scales::comma)\n\ngapminder_g\n\n\n\n\n\n\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   }
 ]
