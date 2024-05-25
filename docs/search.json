@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "김예담",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 25, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "세종대학교 소개\n\n\n\n\n\n\n대학교\n\n\n서울\n\n\n\n\n\n\n\n\n\nMay 25, 2024\n\n\n김예담\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 25, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 22, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -26,5 +26,12 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/last/index.html",
+    "href": "posts/last/index.html",
+    "title": "세종대학교 소개",
+    "section": "",
+    "text": "대학교를 소개합니다.\n \nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.\n[세종대학교 전경]\n실행방법\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n{r} library(tidyverse) library(gapminder)\ngapminder_g &lt;- gapminder %&gt;% filter(year == max(year)) %&gt;% ggplot(aes( x = gdpPercap, y = lifeExp, color = continent, size = pop)) + geom_point() + labs(title = “가장 최근 1인당 국민소득과 기대수명 관계”, x = “1인당 국민소득”, y = “기대수명”) + theme_minimal() + facet_wrap(~continent) + theme(legend.position = “none”) + scale_x_continuous(labels = scales::comma)\ngapminder_g\nYou can add options to executable code like this\n{r} #| echo: false 2 * 2\nThe echo: false option disables the printing of code (only output is displayed)."
   }
 ]
